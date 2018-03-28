@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_bp7measure_degreebg"
+        android:layout_width="@dimen/x650"
+        android:layout_height="@dimen/x650"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/measure_degree_bg" />
+
+    <com.vv.bpmeasureview.view.MeasureDegreeView
+        android:id="@+id/degreeview"
+        android:layout_width="@dimen/x650"
+        android:layout_height="@dimen/x650"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_degree"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/btn_reduction"
+            />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+        <Button
+            android:id="@+id/btn_reduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_toRightOf="@+id/btn_add"/>
+    </RelativeLayout>
+</RelativeLayout>
